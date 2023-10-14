@@ -6,5 +6,5 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber" },
         features={ "src/test/resources" },
-        tags= "@SmokeTest")
+        tags= "@Calculator")
 public class TestRunner { }

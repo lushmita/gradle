@@ -19,4 +19,22 @@ public class TestSteps extends PageObjects
     public void thenStatement(){
         System.out.println("Then statement executed successfully");
     }
+
+
+    @Given("^Calculator code is setup$")
+    public void givenCalculatorStatement() {
+        System.out.println("Given statement executed successfully!");
+        PageObjects.CalculatorMethods(100,200);
+    }
+
+    @When("^I enter two numbers$")
+    public void whenCalculatorStatement(){
+        System.out.println("When statement executed successfully");
+    }
+
+    @Then("^result should be the addition of those numbers$")
+    public void thenCalculatorStatement(){
+        System.out.println("Then statement executed successfully");
+    }
+
 }

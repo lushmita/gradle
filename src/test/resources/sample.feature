@@ -8,3 +8,10 @@ Feature: Cucumber run test
     Given sample feature file is ready
     When I run the feature file
     Then run should be successful
+
+  @Calculator
+  Scenario: Calculator Setup
+
+    Given Calculator code is setup
+    When I enter two numbers
+    Then result should be the addition of those numbers
